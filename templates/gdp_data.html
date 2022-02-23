@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} GDP Data {% endblock %}</h1>
+<p>Try adding a year between 1961 and 2021 to the end of the URL to get data for that year.</p>
+<div class="container">
+
+  <div class="jumbotron text-center">
+    <!-- Render our data -->
+    <p>{{ data }}</p>
+        
+  </div>
+
+</div>
+{% endblock %}

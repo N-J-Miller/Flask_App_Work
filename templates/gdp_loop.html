@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} GDP Loop Data {% endblock %}</h1>
+<h3> The following is GDP data pulled from ten loops through the API</h3>
+<div class="container">
+
+  <div class="jumbotron text-center">
+    <!-- Render our data -->
+    <p>{{ data }}</p>
+        
+  </div>
+
+</div>
+{% endblock %}
